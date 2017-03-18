@@ -1,0 +1,140 @@
+input[type = text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 0% 15% 1.5%;
+}
+
+.background{
+  background-image: url("background2.jpg");
+
+}
+*{
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    color: white;
+    font-size: 1.8vw;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.text{
+    float: left;
+    width: 19%;
+    padding: 1px;
+    margin-left: 16%;
+    color: white;
+
+}
+.player {
+    height: 70%;
+    width: 60%;
+    float: right;    
+    padding-left: 0.5%;
+    margin-right: 15%;
+}
+
+.box{
+    height: 30%;
+    width: 50%;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+  font: 4px/1.4 arial;
+}
+
+.imgWrap {
+  position: relative;
+  float: right;
+  width: 12%;
+  padding: 0%;
+  margin: 0.8%; 
+}
+.imgWrap2 {
+  position: relative;
+  float: right;
+  width: 12%;
+  padding: 0%;
+  margin: 0.8%; 
+}
+
+.imgDescription {
+  font: 1vw Jim Nightshade;
+  position: absolute;
+  top: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+  background: rgba(50, 40, 40, 0.8);
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility opacity 0.2s;  
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width:1920px) and (min-width:540px)
+	{
+	  /* this is the breakpoint where we transition from the first layout, of 
+          four side-by-side columns, to the square layout with 2X2 grid */
+	
+          .header{
+              width: 100%;
+          }
+          .input{
+              width: 100%;
+          }
+          .player{
+              width: 60%;
+          }
+          .imgwrap{
+	    width:50%;
+	    
+	  }
+	}
+
+@media screen and (max-width:800px) and (min-width:0px)
+	{
+	  /*custom styling info for smartphones small screens;
+	    All columns are just displayed one below the other */
+          
+          .header{
+              width: 100%;
+          }
+          .input{
+              width: 100%;
+          }	  
+          .player{
+              width: 72%;             
+          } 
+          .box{
+              width: 40%;
+          }
+          .imgwrap{
+              width:100%;
+              //comment
+          }
+          
+          
+	}
